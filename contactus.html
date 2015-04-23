@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<link rel="stylesheet" type="text/css" href="css/style.css">
+	<title>Contact Us</title>
+</head>
+
+<body>
+
+<div id="container">
+<div id="header">
+<div id="logo">
+	<img src="images/logo.png" id="logo">
+</div>
+<div id="basket"><div id="searchlogo"><img src="images/searchlogo.png"></div><h4>SEARCH</h4>
+</div>
+</div>
+
+<div id="container">
+<ul class="nav">
+  <li><a class="button" href="index.html">Home</a></li>
+  <li><a class="button" href="products.php">Products</a></li>
+  <li><a class="button" href="offers.html">Special Offers</a></li>
+  <li><a class="button" href="aboutus.html">About Us</a></li>
+  <li><a class="button" href="contactus.html">Contact Us</a></li>
+</ul>
+<div id="searchbox"><div id="basketlogo"><img src="images/basketlogo.png"></div><h3>BASKET</h3></div>
+</div>
+<div id="section">
+<h2>Contact Us</h2>
+<p>
+If you have any questions, please do contact us using the form below!
+</p>
+<p>
+<i>Please be aware it may take us up to 48 hours to reply to all emails</i>
+<p><form method="post" action="MAILTO:email@email.email">
+First name:<red>*</red><br>
+<input type="text" name="firstname">
+<br>
+Last name:<red>*</red><br>
+<input type="text" name="lastname">
+<br>
+Email:<red>*</red><br>
+<input type="text" name="email">
+<br>
+Type of Message:<red>*</red><br>
+<select name="type_of_email" size="1">
+<option selected>Complaint
+<option>Enquiry
+<option>Business
+<option>Other
+</select>
+<br>
+Message:<red>*</red><br>
+<textarea name="message" rows=8 cols=60></textarea>
+<br><br>
+<input type="submit"  type="submit" value="Send Message" button onclick="myFunction();" />
+<input type="reset" type="reset" value="Clear Message" />
+<p id="demo"></p>
+<script>
+function myFunction() {
+    var x;
+    if (confirm("Form Submitted!\nRemember it may take up to 48 hours to reply.") == true) {
+        x ="Form Submitted!";
+    } else {
+		x = "Form Submitted!";
+	}
+    document.getElementById("demo").innerHTML = x;
+}
+</script>
+<br><br>
+</form>
+</p>
+</div>
+
+<div id="footer">
+&copy; Copyright 2015
+</div>
+
+</body>
+</html>
